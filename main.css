@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(185, 185, 255);
+  
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+
+#furry-btn {
+  text-align: center;
+}
