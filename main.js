@@ -256,3 +256,18 @@ for (furry of pets) {
 }
 
 animals.innerHTML = domString;
+
+const btnCat = document.querySelector('#cat-btn');
+btnCat.addEventListener('click', () => {
+  console.log('Cat Button Clicked');
+});
+
+const btnDog = document.querySelector('#dog-btn');
+btnDog.addEventListener('click', () => {
+  console.log('Dog Button Clicked');
+});
+
+const btnDino = document.querySelector('#dino-btn');
+btnDino.addEventListener('click', () => {
+  console.log('Dino Button Clicked');
+});
