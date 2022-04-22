@@ -248,7 +248,7 @@ for (furry of pets) {
   domString += `<div class="card" style="width: 18rem;">
   <img src="${furry.image}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h1 class="card-text">${furry.name}</h1>
+    <h2 class="card-text">${furry.name}</h2>
     <p class="card-text">${furry.type}</p>
     <p class="card-text">${furry.specialSkill}</p>
   </div>
