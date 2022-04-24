@@ -241,6 +241,7 @@ const pets = [
     }
   ];
 
+
 const animals = document.querySelector('#animals');
 let domString = "";
 
