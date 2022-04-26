@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg"
+      imageUrl: "dino1.jpg"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "dino2.jpg"
     },
     {
       id: 8,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "dino3.jpg"
     },
     {
       id: 11,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "dino4.jpg"
     },
     {
       id: 16,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "cat1.jpg"
     },
     {
       id: 17,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "dino5.jpg"
     },
     {
       id: 18,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "cat2.jpg"
     },
     {
       id: 20,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "dino6.jpg"
     },
     {
       id: 21,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "cat3.jpg"
     },
     {
       id: 22,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "dog1.jpg"
     },
     {
       id: 24,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "cat4.jpg"
     },
     {
       id: 25,
@@ -237,7 +237,7 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "dino7.jpg"
     }
   ];
 const renderToDom = (divId, textToRender) => {
@@ -254,41 +254,41 @@ const petModal = () => {
   `
   <!-- Button trigger modal -->
     <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#add-video">
-    Add Pet
+    Add a Pet Here!
     </button>
      <!-- Modal -->
   <div class="modal fade" id="add-video" tabindex="-1" aria-labelledby="add-video" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-md-down">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Add Pet</h5>
+          <h5 class="modal-title">Add a Pet Here!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" id="modal-body">
         <form>
         <div class="form-floating mb-3">
           <input class="form-control form-control-lg" type="text" placeholder="Name" id="name" aria-label="name" required>
-          <label for="name">Name</label>
+          <label for="name">Name:</label>
         </div>
     
         <div class="form-floating mb-3">
           <input class="form-control form-control-lg" type="text" placeholder="Color" id="color" aria-label="color" required>
-          <label for="title">Color</label>
+          <label for="title">Color:</label>
         </div>
     
         <div class="form-floating mb-3">
         <input class="form-control form-control-lg" type="text" placeholder="Special Skill" id="specialSkill" aria-label="specialSkill" required>
-        <label for="title">Special Skill</label>
+        <label for="title">Special Skill:</label>
       </div>
         
       <div class="form-floating mb-3">
       <input class="form-control form-control-lg" type="text" placeholder="Type of Pet" id="type" aria-label="type" required>
-      <label for="title">Type</label>
+      <label for="title">Type:</label>
     </div>
       
     <div class="form-floating mb-3">
     <input class="form-control form-control-lg" type="text" placeholder="Image URL" id="imageUrl" aria-label="imageUrl" required>
-    <label for="title">Image URL</label>
+    <label for="title">Image URL:</label>
   </div>
     
         <button 
@@ -308,10 +308,12 @@ renderToDom("#formContainer", domString);
 
 const filterBtns  = () => {
   let domString =`
-  <button class="btn btn-secondary btn-lg buttonRow" id="cat">Cats</button>
-  <button class="btn btn-secondary btn-lg buttonRow" id="dog">Dogs</button>
-  <button class="btn btn-secondary btn-lg buttonRow" id="dino">Dinos</button>
-  <button class="btn btn-secondary btn-lg buttonRow" id="all">All Pets</button>
+  <div class="d-grid gap-2 d-md-block">
+  <button class="btn btn-primary" type="button" id="cats">Cats</button>
+  <button class="btn btn-primary" type="button" id="dogs">Dogs</button>
+  <button class="btn btn-primary" type="button" id="dinos">Dinos</button>
+  <button class="btn btn-primary" type="button" id="all">View All</button>
+</div>
 `;
 renderToDom("#filterContainer", domString)
 };
@@ -324,9 +326,9 @@ const renderCards = (array) => {
     <div>
       <button class="btn btn-primary" id="delete--${item.name}">X</button>
     </div>
-      <p class="card-text">${item.name}</p>
+      <h2 class="card-text"><b>${item.name}</b></h2>
       <img src="${item.imageUrl}" class="card-img-top" alt="...">
-      <p class="color">${item.color}</p>
+      <h5 class="color">${item.color}</h5>
       <p class=skl>${item.specialSkill}</p>
       <div class="d-grid gap-2">
         <p>${item.type}</p>
@@ -336,3 +338,53 @@ const renderCards = (array) => {
   }
   renderToDom('#animals', domString);
 };
+
+// EventListeners:
+// const eventListeners = () => {
+//   document.querySelector('#filterContainer').addEventListener('click', (e) => {
+//     if (e.target.id === "all") {
+//       renderCards(pets);
+//     } else if (e.target.id) {
+//       const types = pets.filter(taco => taco.type === e.target.id);
+//       renderCards(types);
+//     }
+//   });
+
+// Delete Buttons:
+document.querySelector('#animals').addEventListener('click', (e) => {
+  if (e.target.id) {
+    const [nethod, name] = e.target.id.split('--');
+    const index = pets.findIndex(pet => pet.name === name)
+    if (e.target.id.includes('delete')) {
+      pets.splice(index, 1)
+      renderCards(pets);
+    }
+  }
+});
+
+// Animal Form: 
+const form = document.querySelector('#formContainer');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const petObj = {
+    name: document.querySelector('#name').value,
+    color: document.querySelector('#color').value,
+    specialSkill: document.querySelector('#specialSkill').value,
+    type: document.querySelector('#type').value,
+    imageUrl: document.querySelector('#imageUrl').value,
+  }
+  pets.push(petObj);
+  renderCards(pets);
+  formModal.hide()
+  form.requestFullscreen();
+});
+
+
+// Render Functions, put at end to ensure documents load:
+const startApp = () => {
+  petModal()
+  filterBtns()
+  renderCards(pets)
+  // eventListeners()
+  };
+  startApp()
