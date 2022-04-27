@@ -309,9 +309,9 @@ renderToDom("#formContainer", domString);
 const filterBtns  = () => {
   let domString =`
   <div class="d-grid gap-2 d-md-block">
-  <button class="btn btn-primary" type="button" id="cats">Cats</button>
-  <button class="btn btn-primary" type="button" id="dogs">Dogs</button>
-  <button class="btn btn-primary" type="button" id="dinos">Dinos</button>
+  <button class="btn btn-primary" type="button" id="cat">Cats</button>
+  <button class="btn btn-primary" type="button" id="dog">Dogs</button>
+  <button class="btn btn-primary" type="button" id="dino">Dinos</button>
   <button class="btn btn-primary" type="button" id="all">View All</button>
 </div>
 `;
@@ -324,7 +324,7 @@ const renderCards = (array) => {
     domString += `<div class="card" style="width: 18rem;">
     <div class="card-body">
     <div>
-      <button class="btn btn-primary" id="delete--${item.name}">X</button>
+      <button class="btn btn-primary" id="delete--${item.name}">Delete Me</button>
     </div>
       <h2 class="card-text"><b>${item.name}</b></h2>
       <img src="${item.imageUrl}" class="card-img-top" alt="...">
@@ -340,20 +340,23 @@ const renderCards = (array) => {
 };
 
 // EventListeners:
-// const eventListeners = () => {
-//   document.querySelector('#filterContainer').addEventListener('click', (e) => {
-//     if (e.target.id === "all") {
-//       renderCards(pets);
-//     } else if (e.target.id) {
-//       const types = pets.filter(taco => taco.type === e.target.id);
-//       renderCards(types);
-//     }
-//   });
+const eventListeners = () => {
+  document.querySelector('#filterContainer').addEventListener('click', (e) => {
+    if (e.target.id === "all") {
+      renderCards(pets);
+    } else if (e.target.id) {
+      const types = pets.filter(taco => {
+        console.log(taco.type, e.target.id);
+        return (taco.type === e.target.id)})
+      renderCards(types);
+      console.log(types);
+    }
+  })};
 
 // Delete Buttons:
 document.querySelector('#animals').addEventListener('click', (e) => {
   if (e.target.id) {
-    const [nethod, name] = e.target.id.split('--');
+    const [method, name] = e.target.id.split('--');
     const index = pets.findIndex(pet => pet.name === name)
     if (e.target.id.includes('delete')) {
       pets.splice(index, 1)
@@ -385,6 +388,6 @@ const startApp = () => {
   petModal()
   filterBtns()
   renderCards(pets)
-  // eventListeners()
+  eventListeners()
   };
   startApp()
